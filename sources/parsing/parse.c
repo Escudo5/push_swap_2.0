@@ -1,0 +1,83 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   parse.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/07 11:25:58 by smarquez          #+#    #+#             */
+/*   Updated: 2025/01/07 12:03:52 by smarquez         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "push_swap.h"
+#include<stdio.h>
+
+void check_input(char **argv, t_list **stack_a)
+{
+    int i;
+    int j;
+    
+    i = 1;
+    j = 0;
+    while(argv[i] != NULL)
+    {
+        if (argv[i][0] == '\0')
+            print_error(stack_a);
+        while(argv[i][j] != '\0')
+        {
+            if (!(ft_isdigit(argv[i][j])) && (argv[i][j] != ' ') && (argv[i][j] != '-') && (argv[i][j] != '+'))
+                print_error(stack_a);
+            j++;
+        }
+        j = 0;
+        i++;
+    }
+}
+
+int check_num_array(char **nums)
+{
+    int i;
+    int j;
+    
+    i = 0;
+    j = 0;
+    while (nums[i]!= NULL)
+    {
+        while (nums[i][j] != '\0')
+        {
+            if (!(ft_isdigit(nums[i][j + 1])) && (nums[i][j + 1] != '\0'))
+                return(1);
+            j++;
+        }
+        j = 0;
+        if (check_overflow(nums[i]))
+            return(1);
+        i++;
+    }
+    return(0);
+}
+
+void insert_numbers(char **nums, t_list **stack_a)
+{
+    int i;
+    int *num;
+    t_list *node;
+    
+    i = 0;
+    while (nums[i] != NULL)
+    {
+        num = malloc(sizeof(int));
+        *num = ft_atoi(nums[i]);
+        node = ft_lstnew(num);
+        if (!node)
+        {
+            ft_lstclear(stack_a, free);
+            free_array(nums);
+            free(nums);
+            print_error(stack_a);
+        }
+        ft_lstadd_back(stack_a, node);
+        i++;
+    }
+}

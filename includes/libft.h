@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 10:31:07 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/07 14:26:32 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/01/07 16:04:20 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,7 @@ int					ft_putnbru(unsigned int nbr);
 int					ft_putptr(void *ptr);
 int					ft_putstr(char *str);
 char				*get_next_line(int fd);
+int					ft_sqrt(int number);
 
 typedef struct s_list
 {

@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:27:41 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/07 13:12:44 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/01/07 14:43:08 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ bool					is_in_range(int index, int start, int end);
 bool					is_in_range_str(const char *str);
 void					sort_stacks(t_stack_node **a, t_stack_node **b);
 void					free_array(char **array);
-void					sa(t_stack_node **a, bool print);
+void					sa(t_stack_node **a);
 void					sb(t_stack_node **b, bool print);
 void					pa(t_stack_node **a, t_stack_node **b, bool print);
 void					pb(t_stack_node **a, t_stack_node **b, bool print);
@@ -69,6 +69,36 @@ void					free_stack(t_stack_node **a);
 void					sort_three(t_stack_node **a);
 t_stack_node			*find_max(t_stack_node *a);
 int 					ft_stacksize(t_stack_node *stack);
+
+
+
+//parse 
+void check_digits(char **argv, t_list **stack_a);
+void check_dup(t_list **stack_a);
+int check_length(char *numbers);
+int check_overflow(char *numbers);
+void check_input(char **argv, t_list **stack_a);
+int check_num_array(char **nums);
+void insert_numbers(char **nums, t_list **stack_a);
+void split_parse(char **argv, t_list **stack_a);
+void parse(char **argv, t_list **stack_a);
+void print_error(t_list **stack_a);
+void free_array(char **array);
+
+// principal
+int nums_ordered(t_list **stack);
+void get_index(t_list **stack);
+int count_index_position(t_list **stack, int index);
+void init_push_swap(t_list **stack_a, t_list **stack_b);
+
+
+
+
+
+
+
+
+
 
 
 #endif

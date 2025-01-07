@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 10:31:07 by smarquez          #+#    #+#             */
-/*   Updated: 2024/11/28 16:33:28 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/01/07 14:26:32 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,7 @@ typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
+	int 			index;
 }					t_list;
 
 t_list				*ft_lstnew(void *content);

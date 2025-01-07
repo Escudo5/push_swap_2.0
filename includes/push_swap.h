@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:27:41 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/07 13:02:38 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/01/07 13:12:44 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void					init_stack_a(t_stack_node **a, int *numbers,
 							int len);
  void				append_node(t_stack_node **a, int n);
 t_stack_node			*find_last(t_stack_node *a);
- long				ft_atol(const char *nptr);
+long				ft_atol(const char *nptr);
 char					**split_input(int argc, char **argv, int *len);
 bool					is_valid(char *str);
 bool					has_dup(int *numbers, int len);

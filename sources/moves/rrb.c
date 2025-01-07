@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   rrb.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: escudo5 <escudo5@student.42.fr>            +#+  +:+       +#+        */
+/*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 19:08:37 by smarquez          #+#    #+#             */
-/*   Updated: 2024/11/29 12:36:21 by escudo5          ###   ########.fr       */
+/*   Updated: 2025/01/07 14:49:55 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../push_swap.h"
+#include "push_swap.h"
 
-void	rrb(t_stack_node **b, bool print)
+void	rrb(t_stack_node **b)
 {
 	t_stack_node	*last;
 	t_stack_node	*second_last;
@@ -28,6 +28,5 @@ void	rrb(t_stack_node **b, bool print)
 	(*b)->prev = last;
 	last->prev = NULL;
 	*b = last;
-	if (print)
-		ft_putstr_fd("rrb\n", 1);
+	ft_putstr_fd("rrb\n", 1);
 }

@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   pa.c                                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: escudo5 <escudo5@student.42.fr>            +#+  +:+       +#+        */
+/*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 16:09:30 by smarquez          #+#    #+#             */
-/*   Updated: 2024/11/29 12:36:09 by escudo5          ###   ########.fr       */
+/*   Updated: 2025/01/07 14:47:46 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../push_swap.h"
+#include "push_swap.h"
 
-void	pa(t_stack_node **a, t_stack_node **b, bool print)
+void	pa(t_stack_node **a, t_stack_node **b)
 {
 	t_stack_node	*node;
 
@@ -27,6 +27,5 @@ void	pa(t_stack_node **a, t_stack_node **b, bool print)
 		(*a)->prev = node;
 	*a = node;
 	node->prev = NULL;
-	if (print)
-        ft_putstr_fd("pa\n", 1);
+    ft_putstr_fd("pa\n", 1);
 }

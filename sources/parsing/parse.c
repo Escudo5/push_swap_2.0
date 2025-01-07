@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:25:58 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/07 12:03:52 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/01/07 12:27:55 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,4 +80,36 @@ void insert_numbers(char **nums, t_list **stack_a)
         ft_lstadd_back(stack_a, node);
         i++;
     }
+}
+
+void split_parse(char **argv, t_list **stack_a)
+{
+    int i;
+    char **nums;
+
+    i = 1;
+    nums = NULL;
+    while (argv[i] != NULL)
+    {
+        nums = ft_split(argv[i], ' ');
+        if (check_num_array(nums))
+        {
+            free_array(stack_a);
+            print_error(stack_a);
+        }
+        else
+        {
+            insert_numbers(nums, stack_a);
+            free_array(nums);
+        }
+        i++;
+    }
+}
+
+void parse(char **argv, t_list **stack_a)
+{
+    check_input(argv, stack_a);
+    check_digits(argv, stack_a);
+    split_parse(argv, stack_a);
+    check_dup(*stack_a);
 }

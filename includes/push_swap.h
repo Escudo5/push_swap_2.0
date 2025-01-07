@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:27:41 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/07 11:46:28 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/01/07 13:02:38 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char					**split_input(int argc, char **argv, int *len);
 bool					is_valid(char *str);
 bool					has_dup(int *numbers, int len);
 int						*create_number_array(char **input, int len);
-bool					check_dup(char **input, int len);
+void check_dup(t_list **stack_a);
 int						get_len(t_stack_node **a);
 bool					is_numeric(const char *str);
 bool					is_dup(int *numbers, int len);

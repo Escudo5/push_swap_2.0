@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 14:53:13 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/07 14:55:19 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/01/08 15:17:16 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,6 @@ int main(int argc, char **argv)
     else
         return(0);
     init_push_swap(&stack_a, &stack_b);
-    ft_lstclear(stack_a, free);
+    ft_lstclear(&stack_a, free);
     return(0);
 }

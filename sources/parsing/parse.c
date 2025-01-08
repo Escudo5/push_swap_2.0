@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:25:58 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/07 13:07:28 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/01/08 16:51:47 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,7 +94,7 @@ void split_parse(char **argv, t_list **stack_a)
         nums = ft_split(argv[i], ' ');
         if (check_num_array(nums))
         {
-            free_array(stack_a);
+            free_array(nums);
             print_error(stack_a);
         }
         else

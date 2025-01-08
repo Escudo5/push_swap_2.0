@@ -6,16 +6,16 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 18:46:56 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/07 14:49:42 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/01/08 17:05:08 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	rra(t_stack_node **a)
+void	rra(t_list **a)
 {
-	t_stack_node	*second_last;
-	t_stack_node	*last;
+	t_list	*second_last;
+	t_list	*last;
 
 	if (*a == NULL || (*a)->next == NULL)
 		return ;

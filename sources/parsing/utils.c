@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 12:29:01 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/07 12:34:09 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/01/08 16:57:20 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void print_error(t_list **stack_a)
     exit(1);
 }
 
-void free_array(char **array)
+void *free_array(char **array)
 {
     size_t i;
     i = 0;
@@ -30,7 +30,7 @@ void free_array(char **array)
         i++;
     }
     free(array);
-    return(NULL);
+    return (NULL);
 }
 
 void check_digits(char **argv, t_list **stack_a)
@@ -52,8 +52,8 @@ void check_digits(char **argv, t_list **stack_a)
         }
         if (nums == 0)
             print_error(stack_a);
-            j = 0;
-            i++;
-            nums = 0;
+        j = 0;
+        i++;
+        nums = 0;
     }
 }

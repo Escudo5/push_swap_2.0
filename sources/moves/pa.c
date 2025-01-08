@@ -6,15 +6,15 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 16:09:30 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/07 14:47:46 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/01/08 17:02:52 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	pa(t_stack_node **a, t_stack_node **b)
+void	pa(t_list **a, t_list **b)
 {
-	t_stack_node	*node;
+	t_list	*node;
 
 	if (*b == NULL)
 		return ;

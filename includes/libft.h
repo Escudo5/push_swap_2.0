@@ -6,14 +6,14 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 10:31:07 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/07 16:04:20 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/01/08 17:23:33 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include "./ft_printf.h"
+//# include "./ft_printf.h"
 # include <fcntl.h>
 # include <limits.h>
 # include <stdarg.h>
@@ -51,6 +51,8 @@ int					ft_memcmp(const void *s1, const void *s2, size_t n);
 char				*ft_strnstr(const char *big, const char *little,
 						size_t len);
 int					ft_atoi(const char *str);
+int	ft_atol(const char *nptr);
+
 void				*ft_calloc(size_t nmemb, size_t size);
 char				*ft_strdup(const char *s1);
 char				*ft_substr(char const *s, unsigned int start, size_t len);
@@ -65,7 +67,7 @@ void				ft_putstr_fd(char *s, int fd);
 void				ft_putendl_fd(char *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
 int					ft_hexadec(unsigned long nbr, int upper);
-int					ft_printf(char const *format, ...);
+///int					ft_printf(char const *format, ...);
 int					ft_putnbr(int n);
 int					ft_putnbru(unsigned int nbr);
 int					ft_putptr(void *ptr);
@@ -77,6 +79,9 @@ typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
+	struct s_list	*prev;
+	
+	
 	int 			index;
 }					t_list;
 

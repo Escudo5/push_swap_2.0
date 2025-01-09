@@ -6,14 +6,14 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 10:31:07 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/08 17:23:33 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/01/09 15:07:07 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-//# include "./ft_printf.h"
+# include "./ft_printf.h"
 # include <fcntl.h>
 # include <limits.h>
 # include <stdarg.h>
@@ -67,7 +67,7 @@ void				ft_putstr_fd(char *s, int fd);
 void				ft_putendl_fd(char *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
 int					ft_hexadec(unsigned long nbr, int upper);
-///int					ft_printf(char const *format, ...);
+int					ft_printf(char const *format, ...);
 int					ft_putnbr(int n);
 int					ft_putnbru(unsigned int nbr);
 int					ft_putptr(void *ptr);

@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 10:31:07 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/09 15:07:07 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/01/13 18:21:43 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ int					ft_memcmp(const void *s1, const void *s2, size_t n);
 char				*ft_strnstr(const char *big, const char *little,
 						size_t len);
 int					ft_atoi(const char *str);
-int	ft_atol(const char *nptr);
+int					ft_atol(const char *nptr);
 
 void				*ft_calloc(size_t nmemb, size_t size);
 char				*ft_strdup(const char *s1);
@@ -80,9 +80,8 @@ typedef struct s_list
 	void			*content;
 	struct s_list	*next;
 	struct s_list	*prev;
-	
-	
-	int 			index;
+
+	int				index;
 }					t_list;
 
 t_list				*ft_lstnew(void *content);

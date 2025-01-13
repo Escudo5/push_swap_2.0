@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:25:58 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/08 16:51:47 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/01/13 16:19:32 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,17 @@ void check_input(char **argv, t_list **stack_a)
     while(argv[i] != NULL)
     {
         if (argv[i][0] == '\0')
+        {
             print_error(stack_a);
+            printf("caca1");
+        }
         while(argv[i][j] != '\0')
         {
             if (!(ft_isdigit(argv[i][j])) && (argv[i][j] != ' ') && (argv[i][j] != '-') && (argv[i][j] != '+'))
+            {
                 print_error(stack_a);
+                printf("caca_digit");
+            }
             j++;
         }
         j = 0;
@@ -76,6 +82,7 @@ void insert_numbers(char **nums, t_list **stack_a)
             free_array(nums);
             free(nums);
             print_error(stack_a);
+            printf("insert_numbers");
         }
         ft_lstadd_back(stack_a, node);
         i++;
@@ -96,6 +103,7 @@ void split_parse(char **argv, t_list **stack_a)
         {
             free_array(nums);
             print_error(stack_a);
+            printf("split");
         }
         else
         {

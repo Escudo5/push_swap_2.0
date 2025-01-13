@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 12:29:01 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/08 16:57:20 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/01/13 16:11:01 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,10 @@ void check_digits(char **argv, t_list **stack_a)
             j++;
         }
         if (nums == 0)
+        {
             print_error(stack_a);
+            printf("caca_check_digits");
+        }
         j = 0;
         i++;
         nums = 0;

@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 13:21:03 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/13 18:07:49 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/01/14 11:27:09 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,8 +50,9 @@ void	get_index(t_list **stack)
 
 int	count_index_position(t_list **stack, int index)
 {
-	int count;
-	t_list *first;
+	int		count;
+	t_list	*first;
+
 	count = 1;
 	first = *stack;
 	while (first != NULL && first->index != index)

@@ -6,15 +6,15 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 18:43:21 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/08 17:05:04 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/01/14 11:23:38 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void rr(t_list **a, t_list **b)
+void	rr(t_list **a, t_list **b)
 {
-    ra(a);
-    rb(b);
-    ft_putstr_fd("rr\n", 1);
+	ra(a);
+	rb(b);
+	ft_putstr_fd("rr\n", 1);
 }

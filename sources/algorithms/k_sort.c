@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 16:00:30 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/13 18:08:08 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/01/14 11:28:01 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,11 +53,10 @@ int	count_max_rotations(t_list *stack, int max_index)
 
 void	k_sort(t_list **stack_a, t_list **stack_b, int number)
 {
-	int rb_count;
-	int rrb_count;
+	int	rb_count;
+	int	rrb_count;
 
 	const_sort_to_b(stack_a, stack_b, number);
-
 	while ((number - 1) >= 0)
 	{
 		rb_count = count_max_rotations((*stack_b), (number - 1));

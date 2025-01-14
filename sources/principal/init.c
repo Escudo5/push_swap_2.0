@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:09:54 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/13 18:07:44 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/01/14 11:27:27 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 void	init_push_swap(t_list **stack_a, t_list **stack_b)
 {
-	int nums;
+	int	nums;
+
 	nums = ft_lstsize(*stack_a);
 	get_index(stack_a);
 	if (!nums_ordered(stack_a))

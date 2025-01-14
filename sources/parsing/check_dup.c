@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 12:48:51 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/13 18:07:33 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/01/14 11:24:48 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	check_dup(t_list *stack_a)
 {
-	t_list *now;
-	t_list *comparison;
-	int now_number;
-	int comparison_number;
+	t_list	*now;
+	t_list	*comparison;
+	int		now_number;
+	int		comparison_number;
 
 	now = stack_a;
 	while (now != NULL && now->next != NULL)

@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 12:29:01 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/13 18:07:41 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/01/14 11:24:35 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,9 @@ void	*free_array(char **array)
 
 void	check_digits(char **argv, t_list **stack_a)
 {
-	int i;
-	int j;
-	int nums;
+	int	i;
+	int	j;
+	int	nums;
 
 	i = 1;
 	j = 0;

@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 18:34:18 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/08 17:05:01 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/01/14 11:23:08 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	rb(t_list **b)
 {
-	t_list *first;
-	t_list *last;
+	t_list	*first;
+	t_list	*last;
 
 	if (*b == NULL || (*b)->next == NULL)
 		return ;

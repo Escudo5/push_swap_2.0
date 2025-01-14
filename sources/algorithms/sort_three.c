@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 14:59:02 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/13 18:25:46 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/01/14 11:28:17 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,10 +40,10 @@ void	order_numbers(t_list **stack_a, int first, int second, int third)
 
 void	sort_three(t_list **stack_a)
 {
-	t_list *start;
-	int first;
-	int second;
-	int third;
+	t_list	*start;
+	int		first;
+	int		second;
+	int		third;
 
 	start = *stack_a;
 	first = *(int *)start->content;

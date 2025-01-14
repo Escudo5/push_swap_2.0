@@ -6,12 +6,11 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 18:46:56 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/13 18:05:07 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/01/14 11:23:56 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
 
 void	rra(t_list **stack)
 {
@@ -32,5 +31,3 @@ void	rra(t_list **stack)
 	}
 	ft_printf("rra\n");
 }
-
-

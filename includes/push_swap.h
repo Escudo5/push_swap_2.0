@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:27:41 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/13 18:22:01 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/02/03 11:24:38 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,5 +94,10 @@ void	get_index(t_list **stack);
 int		count_index_position(t_list **stack, int index);
 void	init_push_swap(t_list **stack_a, t_list **stack_b);
 int		main(int argc, char **argv);
+
+//bonus
+void moves_check(t_list **stack_a, t_list **stack_b, char *line);
+int main(int argc, char **argv);
+
 
 #endif

@@ -1,7 +1,7 @@
 Name = push_swap
 BONUS_NAME = checker
 
-CC = gcc
+CC = cc
 
 HEADERS = -I ./includes
 
@@ -21,18 +21,20 @@ SRCS_LIB := $(addprefix ./custom-libft/, \
 
 BONUS_DIR = sources/bonus
 
-BONUS_SRCS = $(addprefix $(BONUS_DIR)/, main_bonus.c moves_check.c)
-BONUS_SRC = $(filter-out src/main.c, $(SRCS))
+BONUS_SRC = $(addprefix $(BONUS_DIR)/, main_bonus.c moves_check.c)
+BONUS_SRCS = $(filter-out sources/principal/main.c, $(SRCS)) $(BONUS_SRC)
 
 OBJS = $(SRCS:.c=.o) $(SRCS_LIB:.c=.o)
 
-BONUS_OBJS = $(BONUS_SRCS:.c=.o) $(OBJS)
+BONUS_OBJS = $(BONUS_SRCS:.c=.o) $(SRCS_LIB:.c=.o)
 
 $(Name): $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) -o $(Name)
 
-bonus: $(BONUS_OBJS)
-	$(CC) $(CFLAGS) $(BONUS_OBJS) -o $(BONUS_NAME)
+bonus: $(BONUS_NAME)
+	
+	$(BONUS_NAME): $(BONUS_OBJS)
+	$(CC) $(CFLAGS) $(BONUS_NAME) -o $(BONUS_OBJS)
 
 all: $(Name)
 

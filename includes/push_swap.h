@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:27:41 by smarquez          #+#    #+#             */
-/*   Updated: 2025/02/03 11:24:38 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/02/03 17:56:23 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,7 +97,7 @@ int		main(int argc, char **argv);
 
 //bonus
 void moves_check(t_list **stack_a, t_list **stack_b, char *line);
-int main(int argc, char **argv);
+//int main(int argc, char **argv);
 
 
 #endif

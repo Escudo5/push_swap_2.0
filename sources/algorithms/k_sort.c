@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 16:00:30 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/14 11:28:01 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/02/04 10:59:47 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,18 +23,18 @@ void	const_sort_to_b(t_list **stack_a, t_list **stack_b, int number)
 	{
 		if ((*stack_a)->index <= i)
 		{
-			pb(stack_a, stack_b);
+			pb(stack_a, stack_b, true);
 			if (ft_lstsize(*stack_b) > 1)
-				rb(stack_b);
+				rb(stack_b, true);
 			i++;
 		}
 		else if ((*stack_a)->index <= i + range)
 		{
-			pb(stack_a, stack_b);
+			pb(stack_a, stack_b, true);
 			i++;
 		}
 		else
-			ra(stack_a);
+			ra(stack_a, true);
 	}
 }
 
@@ -64,15 +64,15 @@ void	k_sort(t_list **stack_a, t_list **stack_b, int number)
 		if (rb_count <= rrb_count)
 		{
 			while ((*stack_b)->index != (number - 1))
-				rb(stack_b);
-			pa(stack_a, stack_b);
+				rb(stack_b, true);
+			pa(stack_a, stack_b, true);
 			number--;
 		}
 		else
 		{
 			while ((*stack_b)->index != (number - 1))
-				rrb(stack_b);
-			pa(stack_a, stack_b);
+				rrb(stack_b, true);
+			pa(stack_a, stack_b, true);
 			number--;
 		}
 	}

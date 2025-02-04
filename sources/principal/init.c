@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:09:54 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/14 11:27:27 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/02/04 10:56:19 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	init_push_swap(t_list **stack_a, t_list **stack_b)
 	if (!nums_ordered(stack_a))
 	{
 		if (nums == 2)
-			sa(stack_a);
+			sa(stack_a, true);
 		else if (nums == 3)
 			sort_three(stack_a);
 		else if (nums == 4)

@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 14:59:02 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/14 11:28:17 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/02/04 10:58:26 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,26 +15,26 @@
 void	order_numbers(t_list **stack_a, int first, int second, int third)
 {
 	if ((third > second) && (third > first))
-		sa(stack_a);
+		sa(stack_a, true);
 	if ((second > third) && (second > first))
 	{
 		if (first > third)
-			rra(stack_a);
+			rra(stack_a, true);
 		else
 		{
-			rra(stack_a);
-			sa(stack_a);
+			rra(stack_a, true);
+			sa(stack_a, true);
 		}
 	}
 	if ((first > second) && (first > third))
 	{
 		if (second > third)
 		{
-			ra(stack_a);
-			sa(stack_a);
+			ra(stack_a, true);
+			sa(stack_a, true);
 		}
 		else
-			ra(stack_a);
+			ra(stack_a, true);
 	}
 }
 

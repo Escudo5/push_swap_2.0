@@ -6,15 +6,16 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 17:26:55 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/08 17:05:27 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/02/04 10:51:38 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	ss(t_list **a, t_list **b)
+void	ss(t_list **a, t_list **b, bool print)
 {
 	sa(a);
 	sb(b);
+	if (print == true)
 	ft_putstr_fd("ss\n", 1);
 }

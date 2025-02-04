@@ -33,8 +33,8 @@ $(Name): $(OBJS)
 
 bonus: $(BONUS_NAME)
 	
-	$(BONUS_NAME): $(BONUS_OBJS)
-	$(CC) $(CFLAGS) $(BONUS_NAME) -o $(BONUS_OBJS)
+$(BONUS_NAME): $(BONUS_OBJS)
+	$(CC) $(CFLAGS) $(BONUS_OBJS) -o $(BONUS_NAME)
 
 all: $(Name)
 

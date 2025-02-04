@@ -6,13 +6,13 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 16:09:30 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/13 18:24:14 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/02/04 10:50:33 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	pa(t_list **a, t_list **b)
+void	pa(t_list **a, t_list **b, bool print)
 {
 	t_list	*node;
 
@@ -27,5 +27,6 @@ void	pa(t_list **a, t_list **b)
 		(*a)->prev = node;
 	*a = node;
 	node->prev = NULL;
-	ft_putstr_fd("pa\n", 1);
+	if (print == true)
+		ft_putstr_fd("pa\n", 1);
 }

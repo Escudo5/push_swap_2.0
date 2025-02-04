@@ -6,13 +6,13 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 17:30:26 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/08 17:04:57 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/02/04 10:50:44 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	ra(t_list **a)
+void	ra(t_list **a, bool print)
 {
 	t_list	*first;
 	t_list	*last;
@@ -28,5 +28,6 @@ void	ra(t_list **a)
 	last->next = first;
 	first->prev = last;
 	first->next = NULL;
-	ft_putstr_fd("ra\n", 1);
+	if (print == true)
+		ft_putstr_fd("ra\n", 1);
 }

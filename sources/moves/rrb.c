@@ -6,13 +6,13 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 19:08:37 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/13 18:05:06 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/02/04 10:51:02 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	rrb(t_list **stack)
+void	rrb(t_list **stack, bool print)
 {
 	t_list	*second_last;
 	t_list	*last;
@@ -29,5 +29,6 @@ void	rrb(t_list **stack)
 		last->prev = NULL;
 		*stack = last;
 	}
-	ft_printf("rrb\n");
+	if (print == true)
+		ft_printf("rrb\n");
 }

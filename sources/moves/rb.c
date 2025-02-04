@@ -6,13 +6,13 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 18:34:18 by smarquez          #+#    #+#             */
-/*   Updated: 2025/01/14 11:23:08 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/02/04 10:50:49 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	rb(t_list **b)
+void	rb(t_list **b, bool print)
 {
 	t_list	*first;
 	t_list	*last;
@@ -28,5 +28,6 @@ void	rb(t_list **b)
 	last->next = first;
 	first->prev = last;
 	first->next = NULL;
-	ft_putstr_fd("rb\n", 1);
+	if (print == true)
+		ft_putstr_fd("rb\n", 1);
 }

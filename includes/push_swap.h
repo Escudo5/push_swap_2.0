@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:27:41 by smarquez          #+#    #+#             */
-/*   Updated: 2025/02/04 11:30:06 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/02/10 13:21:12 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,13 +52,13 @@ void	sa(t_list **a, bool print);
 void	sb(t_list **b, bool print);
 void	pa(t_list **a, t_list **b, bool print);
 void	pb(t_list **a, t_list **b, bool print);
-void	ss(t_list **a, t_list **b, bool print);
+void	ss(t_list **a, t_list **b);
 void	ra(t_list **a, bool print);
 void	rb(t_list **b, bool print);
-void	rr(t_list **a, t_list **b, bool print);
+void	rr(t_list **a, t_list **b);
 void	rra(t_list **a, bool print);
 void	rrb(t_list **b, bool print);
-void	rrr(t_list **a, t_list **b, bool print);
+void	rrr(t_list **a, t_list **b);
 
 /* @param a
 void	index_n(t_list **a);

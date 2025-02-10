@@ -6,16 +6,18 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 17:26:55 by smarquez          #+#    #+#             */
-/*   Updated: 2025/02/04 11:30:16 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/02/10 13:20:41 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	ss(t_list **a, t_list **b, bool print)
+void	ss(t_list **a, t_list **b)
 {
+	if (*b == NULL || (*b)->next == NULL)
+		return ;
+	if (*a == NULL || (*a)->next == NULL)
+		return ;
 	sa(a, true);
 	sb(b, true);
-	if (print == true)
-		ft_putstr_fd("ss\n", 1);
 }

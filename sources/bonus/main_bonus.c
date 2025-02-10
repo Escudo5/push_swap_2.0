@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 10:26:52 by smarquez          #+#    #+#             */
-/*   Updated: 2025/02/04 11:30:30 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/02/10 12:15:15 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ static void	ft_checker(t_list **stack_a, t_list **stack_b)
 		free(line);
 		line = get_next_line(0);
 	}
+	free(line);
 	if (nums_ordered(stack_a))
 		ft_printf("OK\n");
 	else if (ft_lstsize(*stack_a) == 1)
@@ -38,6 +39,7 @@ int	main(int argc, char **argv)
 	int		i;
 	char	**number;
 
+	number = NULL;
 	stack_a = NULL;
 	stack_b = NULL;
 	if (argc < 2)

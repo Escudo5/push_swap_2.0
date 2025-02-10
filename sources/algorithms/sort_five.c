@@ -6,7 +6,7 @@
 /*   By: smarquez <smarquez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 15:26:16 by smarquez          #+#    #+#             */
-/*   Updated: 2025/02/04 10:59:16 by smarquez         ###   ########.fr       */
+/*   Updated: 2025/02/10 10:18:45 by smarquez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	sort_five(t_list **stack_a, t_list **stack_b, int digits)
 	}
 	if (!nums_ordered(stack_a))
 		sort_three(stack_a);
-	if (nums_ordered(stack_a))
+	if (nums_ordered(stack_b))
 		sb(stack_b, true);
 	pa(stack_a, stack_b, true);
 	pa(stack_a, stack_b, true);
